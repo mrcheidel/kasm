@@ -1,0 +1,42 @@
+services:
+  kasmweb-ubuntu-focal-desktop:
+    image: "kasmweb-ubuntu-focal-desktop:root"
+    privileged: true
+    build: ./ubuntu
+    shm_size: "512m"
+    ports:
+      - "4901:4901"
+      - "5901:5901"
+      - "6901:6901"
+    volumes:
+    - ./ubuntu/uploads/:/home/kasm-user/Uploads/
+    - ./ubuntu/downloads/:/home/kasm-user/Downloads/
+    cap_add:
+      - SYS_ADMIN
+    environment:
+      VNC_PW: 'password'
+      AUDIO_PORT: 4901
+      LANG: "en_US.UTF-8"
+      LANGUAGE: "en_US:en"
+      LC_ALL: "en_US.UTF-8"
+      SHELL: "/bin/bash"
+    networks:
+      - proxynet
+      
+  kasmweb-nginx:
+    image: "nginx"
+    ports:
+      - "443:443"
+    volumes:
+    - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    - ./nginx/ssl/:/etc/nginx/ssl/
+    - ./nginx/users/:/etc/nginx/users/
+    networks:
+      - proxynet
+
+networks:
+  proxynet:
+    name: custom_network
+    external: true
+# sudo docker-compose up -d
+# sudo docker-compose build
