@@ -1,6 +1,6 @@
 # Description
 
-This repository contains a `docker-compose.yml` file that sets up a Kasm-based environment with an Ubuntu Focal desktop and an Nginx server. The configuration allows connection via VNC and HTTPS.
+This repository contains a `docker-compose.yml` file that sets up a [Kasm-based](https://kasmweb.com/) environment with an Ubuntu Focal desktop and an Nginx server. The configuration allows connection via VNC and HTTPS.
 
 ![Example](example.png?raw=true "Example")
 
