@@ -2,6 +2,8 @@
 
 This repository contains a `docker-compose.yml` file that sets up a Kasm-based environment with an Ubuntu Focal desktop and an Nginx server. The configuration allows connection via VNC and HTTPS.
 
+![Example](example.png?raw=true "Example")
+
 ## Prerequisites
 
 Before running `docker-compose.yml`, make sure you meet the following requirements:
