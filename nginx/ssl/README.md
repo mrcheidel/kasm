@@ -1,4 +1,5 @@
-Put here these both files
+## Put here these both files
 
-fullchain.cer
-key.pem
+
+- fullchain.cer
+- key.pem
