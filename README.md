@@ -87,9 +87,9 @@ To add users for basic authentication in Nginx using `htpasswd`, follow these st
    ```sh
    sudo apt-get install apache2-utils
    ```
-2. Create or update the user file in `./nginx/users/.htpasswd`:
+2. Create or update the user file in `./nginx/users/htpasswd`:
    ```sh
-   htpasswd -c ./nginx/users/.htpasswd new_user
+   htpasswd -c ./nginx/users/htpasswd new_user
    ```
    *Note:* Use `-c` only the first time to create the file. To add more users, omit `-c`.
 3. Enter the password when prompted.
