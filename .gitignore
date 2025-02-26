@@ -2,3 +2,5 @@
 fullchain.cer
 key.pem
 nginx/users/htpasswd
+/ubuntu/kasm-user
+/ubuntu/shared
