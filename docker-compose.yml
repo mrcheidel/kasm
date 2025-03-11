@@ -33,10 +33,21 @@ services:
     - ./nginx/users/:/etc/nginx/users/
     networks:
       - proxynet
+      
+  kasmweb-xml2xsd:
+    image: "xml2xsd"
+    build: ./xml2xsd
+    ports:
+      - "5173:5173"
+      - "3005:3005"
+    networks:
+      - proxynet
+
+      
 
 networks:
   proxynet:
     name: custom_network
-    external: true
+
 # sudo docker-compose up -d
 # sudo docker-compose build

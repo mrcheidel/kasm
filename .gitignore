@@ -3,4 +3,6 @@ fullchain.cer
 key.pem
 nginx/users/htpasswd
 /ubuntu/kasm-user
+/ubuntu/downloads
 
+/xml2xsd/.bolt
