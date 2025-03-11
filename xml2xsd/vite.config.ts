@@ -13,23 +13,22 @@ export default defineConfig({
     cors: true,
     allowedHosts: true,
     proxy: {
-      '/iso200200/api/validate': {
-        target: 'https://localhost:3005',
-        changeOrigin: true,
-        secure: false,
-        rewrite: (path) => path
-      },
-      '/iso200200/api/iso20022/health': {
+      '/validate': {
         target: 'http://localhost:3005',
         changeOrigin: true,
         secure: false
       },
-      '/iso200200/api/xsd-tree': {
+      '/health': {
         target: 'http://localhost:3005',
         changeOrigin: true,
         secure: false
       },
-      '/iso200200/api/xsd-content': {
+      '/xsd-tree': {
+        target: 'http://localhost:3005',
+        changeOrigin: true,
+        secure: false
+      },
+      '/xsd-content': {
         target: 'http://localhost:3005',
         changeOrigin: true,
         secure: false

@@ -48,6 +48,7 @@ services:
 networks:
   proxynet:
     name: custom_network
-
+    
+# docker system prune -a --volumes
 # sudo docker-compose up -d
 # sudo docker-compose build
