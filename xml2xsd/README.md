@@ -1,6 +1,8 @@
-# XML Validator UI
+# ISO20022 XML 2 SCHEMA-XSD Validato UI
 
 A graphical user interface for validating XML documents against XSD schemas.
+
+![Example](images/screenshot.png?raw=true "Example")
 
 ## Features
 
@@ -32,7 +34,7 @@ A graphical user interface for validating XML documents against XSD schemas.
 ## Usage
 
 1. Paste or upload your XML content in the left panel
-2. Paste or upload your XSD schema in the right panel
+2. Paste or select your ISO 20022 XSD schema in the right panel
 3. Click "Validate XML against XSD"
 4. View the validation results below
 
