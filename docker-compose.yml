@@ -20,6 +20,7 @@ services:
       LC_ALL: "es_ES.UTF-8"
       SHELL: "/bin/bash"
       TZ: "CET"
+
     networks:
       - proxynet
       
