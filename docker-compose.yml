@@ -31,7 +31,9 @@ services:
     volumes:
     - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     - ./nginx/ssl/:/etc/nginx/ssl/
-    - ./nginx/users/:/etc/nginx/users/
+    - ./nginx/users/htpasswd:/etc/nginx/users/htpasswd:rw
+
+    
     networks:
       - proxynet
       
@@ -51,5 +53,6 @@ networks:
     name: custom_network
     
 # docker system prune -a --volumes
-# sudo docker-compose up -d
 # sudo docker-compose build
+# sudo docker-compose up -d
+
