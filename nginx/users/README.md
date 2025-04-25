@@ -1,1 +1,0 @@
-Create here a file with the name "htpasswd"
