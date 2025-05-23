@@ -43,6 +43,8 @@ services:
     ports:
       - "5173:5173"
       - "3005:3005"
+    volumes:
+    - ./xml2xsd/xsd/:/app/xsd/:rw
     networks:
       - proxynet
 
