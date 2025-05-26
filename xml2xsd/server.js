@@ -97,7 +97,7 @@ app.post('/validate', (req, res) => {
     const { xmlContent, xsdContent } = req.body;
     
     if (!xmlContent || !xsdContent) {
-      return res.status(400).json({ 
+      return res.status(200).json({ 
         success: false, 
         message: 'Both XML and XSD content are required' 
       });
@@ -113,7 +113,7 @@ app.post('/validate', (req, res) => {
     try {
       xmlDoc = libxml.parseXml(xmlContent);
     } catch (error) {
-      return res.status(400).json({
+      return res.status(200).json({
         success: false,
         message: 'Invalid XML format',
         error: error.message
@@ -123,7 +123,7 @@ app.post('/validate', (req, res) => {
     try {
       xsdDoc = libxml.parseXml(xsdContent);
     } catch (error) {
-      return res.status(400).json({
+      return res.status(200).json({
         success: false,
         message: 'Invalid XSD format',
         error: error.message
