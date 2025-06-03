@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document
+	xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.004.001.09">
+    <PmtRtr>
+        <GrpHdr>
+            <MsgId>msgId174851346045</MsgId>
+            <CreDtTm>2025-05-29T10:11:00.047Z</CreDtTm>
+            <NbOfTxs>1</NbOfTxs>
+            <IntrBkSttlmDt>2024-11-19</IntrBkSttlmDt>
+            <SttlmInf>
+                <SttlmMtd>CLRG</SttlmMtd>
+                <ClrSys>
+                    <Prtry>001</Prtry>
+                </ClrSys>
+            </SttlmInf>
+        </GrpHdr>
+        <TxInf>
+            <RtrId>rtr-4793e78af5ef3754b09856f390a9754</RtrId>
+            <OrgnlGrpInf>
+                <OrgnlMsgId>0ed80c9981bf370797a82673275a80d2</OrgnlMsgId>
+                <OrgnlMsgNmId>pacs.008.001.08</OrgnlMsgNmId>
+            </OrgnlGrpInf>
+            <OrgnlEndToEndId>E2E test CASS Auto Return Test</OrgnlEndToEndId>
+            <OrgnlTxId>0ed80c9981bf370797a82673275a80d2</OrgnlTxId>
+            <RtrdIntrBkSttlmAmt Ccy="GBP">2.02</RtrdIntrBkSttlmAmt>
+            <RtrRsnInf>
+                <Rsn>
+                    <Cd>AB04</Cd>
+                </Rsn>
+                <AddtlInf>AB04</AddtlInf>
+                <AddtlInf>Settlement process aborted due to a fatal error.</AddtlInf>
+            </RtrRsnInf>
+            <OrgnlTxRef>
+                <IntrBkSttlmDt>2024-11-19</IntrBkSttlmDt>
+                <PmtTpInf>
+                    <SvcLvl>
+                        <Cd>FP</Cd>
+                    </SvcLvl>
+                    <LclInstrm>
+                        <Prtry>RTP</Prtry>
+                    </LclInstrm>
+                </PmtTpInf>
+                <RmtInf>
+                    <Ustrd>RemittaRET</Ustrd>
+                    <Strd>
+                        <CdtrRefInf>
+                            <Ref>E2E Test CASS scen</Ref>
+                        </CdtrRefInf>
+                        <AddtlRmtInf>E2EQNOBI6F7B028 1020241119826200000 </AddtlRmtInf>
+                    </Strd>
+                </RmtInf>
+                <Dbtr>
+                    <Pty>
+                        <Nm>OrigCustAccNRET</Nm>
+                        <PstlAdr>
+                            <AdrLine>OrigCustAccAddRET</AdrLine>
+                        </PstlAdr>
+                    </Pty>
+                </Dbtr>
+                <DbtrAcct>
+                    <Id>
+                        <Othr>
+                            <Id>01000011</Id>
+                        </Othr>
+                    </Id>
+                    <Nm>OrigCustAccNRET</Nm>
+                </DbtrAcct>
+                <DbtrAgt>
+                    <FinInstnId>
+                        <ClrSysMmbId>
+                            <ClrSysId>
+                                <Prtry>MEMBER_SENDER</Prtry>
+                            </ClrSysId>
+                            <MmbId>200000</MmbId>
+                        </ClrSysMmbId>
+                    </FinInstnId>
+                </DbtrAgt>
+                <CdtrAgt>
+                    <FinInstnId>
+                        <ClrSysMmbId>
+                            <ClrSysId>
+                                <Prtry>MEMBER_SENDER</Prtry>
+                            </ClrSysId>
+                            <MmbId>090720</MmbId>
+                        </ClrSysMmbId>
+                    </FinInstnId>
+                </CdtrAgt>
+                <CdtrAgtAcct>
+                    <Id>
+                        <Othr>
+                            <Id>06655882</Id>
+                        </Othr>
+                    </Id>
+                </CdtrAgtAcct>
+                <Cdtr>
+                    <Pty>
+                        <Nm>Corr FPS</Nm>
+                        <PstlAdr>
+                            <AdrLine>BenCustAccAddrRET</AdrLine>
+                        </PstlAdr>
+                    </Pty>
+                </Cdtr>
+                <CdtrAcct>
+                    <Id>
+                        <Othr>
+                            <Id>06655882</Id>
+                        </Othr>
+                    </Id>
+                    <Nm>Corr FPS</Nm>
+                </CdtrAcct>
+            </OrgnlTxRef>
+        </TxInf>
+    </PmtRtr>
+</Document>

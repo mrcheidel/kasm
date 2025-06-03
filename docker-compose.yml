@@ -32,10 +32,19 @@ services:
     - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     - ./nginx/ssl/:/etc/nginx/ssl/
     - ./nginx/users/htpasswd:/etc/nginx/users/htpasswd:rw
-
-    
     networks:
       - proxynet
+      
+  kasmweb-fileshare:
+    image: "fileshare"
+    build: ./fileshare
+    ports:
+      - "8080:8080"
+    volumes:
+    - ./ubuntu/kasm-user/Uploads:/app/files/:rw
+    networks:
+      - proxynet
+      
       
   kasmweb-xml2xsd:
     image: "xml2xsd"
@@ -47,6 +56,7 @@ services:
     - ./xml2xsd/xsd/:/app/xsd/:rw
     networks:
       - proxynet
+
 
       
 

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.10">
+<CstmrPmtStsRpt>
+<GrpHdr>
+<MsgId>MSGID12345</MsgId>
+<CreDtTm>2023-09-01T12:00:00</CreDtTm>
+</GrpHdr>
+<OrgnlGrpInfAndSts>
+<OrgnlMsgId>ORIGINALMSGID12345</OrgnlMsgId>
+<OrgnlMsgNmId>pain.001.001.10</OrgnlMsgNmId>
+<GrpSts>ACCP</GrpSts>
+</OrgnlGrpInfAndSts>
+<OrgnlPmtInfAndSts>
+<OrgnlPmtInfId>ORIGINALPMTINFID12345</OrgnlPmtInfId>
+<PmtInfSts>ACCP</PmtInfSts>
+<TxInfAndSts>
+<OrgnlEndToEndId>ORIGINALENDTOENDID12345</OrgnlEndToEndId>
+<TxSts>ACCP</TxSts>
+</TxInfAndSts>
+</OrgnlPmtInfAndSts>
+</CstmrPmtStsRpt>
+</Document>
