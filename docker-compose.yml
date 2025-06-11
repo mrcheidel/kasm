@@ -3,11 +3,15 @@ services:
     image: "kasmweb-ubuntu-focal-desktop:root"
     privileged: true
     build: ./ubuntu
-    shm_size: "2gb"
     ports:
       - "4901:4901"
       - "5901:5901"
       - "6901:6901"
+    deploy:
+      resources:
+        reservations:
+          memory: 4G
+      
     volumes:
     - ./ubuntu/kasm-user/:/home/kasm-user/:rw
     cap_add:
@@ -20,6 +24,7 @@ services:
       LC_ALL: "es_ES.UTF-8"
       SHELL: "/bin/bash"
       TZ: "CET"
+
 
     networks:
       - proxynet
